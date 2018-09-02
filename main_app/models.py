@@ -10,10 +10,13 @@ class ItemRank(models.Model):
     rk = models.IntegerField(blank=True, null=True)
     title = models.CharField(max_length=200, blank=True, null=True)
     price = models.IntegerField(blank=True, null=True)
-
+    product_id = models.CharField(max_length=15)
+    item_id = models.CharField(max_length=15)
+    vendor_item_id = models.CharField(max_length=15)
+  
     class Meta:
         managed = False
-        db_table = 'item_rank'
+        db_table = u'item_rank'
 
 
 class ItemSite(models.Model):
@@ -23,5 +26,5 @@ class ItemSite(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'item_site'
+        db_table = u'item_site'
 

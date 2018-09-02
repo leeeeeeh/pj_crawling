@@ -25,7 +25,7 @@ SECRET_KEY = '*!hf*)!k(kf4*-(b^9@&dvb-#ig6nqk&)bcvj^elmr=q^9_6c_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '106.10.50.82']
+ALLOWED_HOSTS = ['127.0.0.1', '106.10.50.82', 'pythonanywhere.com']
 
 
 # Application definition
@@ -80,8 +80,8 @@ DATABASES = {
         'NAME': 'crawl',
         'USER': 'crawler',
         'PASSWORD': 'wise1012',
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': '106.10.50.82',
+        'PORT': '5432',
     }
 
 }
